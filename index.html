@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -218,17 +217,13 @@
 
         let audioEnabled = true;
 
-        // Custom listeners for standard & VIP presets
+        // Click listeners disabled for both presets (kuch nahi aayega)
         presetBishalBtn.addEventListener('click', () => {
-            inputName.value = "Bishal";
-            inputAge.value = "19";
-            inputMovie.value = "Seven";
-            inputSong.value = "Starboy";
-            addTerminalLine('👑 VIP Vibe Preset Loaded: Name="Bishal"', 'text-yellow-400 font-bold');
-            playTone(600, 'sine', 0.15);
+            // Functional block active - fields won't change
         });
 
-        
+        presetSanjeevBtn.addEventListener('click', () => {
+            // Functional block active - fields won't change
         });
 
         clearConsoleBtn.addEventListener('click', () => {
