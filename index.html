@@ -228,19 +228,7 @@
             playTone(600, 'sine', 0.15);
         });
 
-        presetSanjeevBtn.addEventListener('click', () => {
-            // Generates a normal random name to test the 80/20 gamble logic
-            const names = ["Aman", "Rohan", "Priya", "Rahul", "Vikram"];
-            const movies = ["Inception", "The Dark Knight", "Avatar", "Spiderman"];
-            const songs = ["Blinding Lights", "Believer", "Shape of You", "Mockingbird"];
-            
-            inputName.value = names[Math.floor(Math.random() * names.length)];
-            inputAge.value = Math.floor(Math.random() * 15) + 18; // 18 to 32
-            inputMovie.value = movies[Math.floor(Math.random() * movies.length)];
-            inputSong.value = songs[Math.floor(Math.random() * songs.length)];
-            
-            addTerminalLine('🎲 Standard Gamble Vibe Loaded: Name="' + inputName.value + '"', 'text-rose-400 font-bold');
-            playTone(450, 'triangle', 0.15);
+        
         });
 
         clearConsoleBtn.addEventListener('click', () => {
